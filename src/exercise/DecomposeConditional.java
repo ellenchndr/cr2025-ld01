@@ -17,6 +17,8 @@ public class DecomposeConditional {
         }
 
         public double getTicketPrice(Date date, int quantity) {
+        	// function untuk mengecek apakah di tanggal tersebut sedang winter
+        	// membuat function yang memisahkan fungsi untuk charge saat winter dan summer
             if (isWinter(date)) {
                 return calculateWinterCharge(quantity);
             }
